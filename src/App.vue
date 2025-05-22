@@ -64,7 +64,7 @@
       weatherSearch() {
         this.loading = true;
         this.error = false;
-        fetch(`http://api.weatherapi.com/v1//current.json?key=bb42573767e544489ae154431251805&q=${this.searchQuery}`)
+        fetch(`https://api.weatherapi.com/v1//current.json?key=bb42573767e544489ae154431251805&q=${this.searchQuery}`)
         .then(response => response.json())
         .then(data => {
           this.loading = false;
